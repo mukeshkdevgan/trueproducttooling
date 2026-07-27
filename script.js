@@ -204,10 +204,10 @@
     });
   }
 
-  function openGallery(key) {
+  function openGallery(key, startIndex) {
     if (!galleries[key]) return;
     activeKey = key;
-    activeIndex = 0;
+    activeIndex = startIndex || 0;
     titleEl.textContent = galleries[key].title;
     buildThumbs();
     render();
@@ -228,12 +228,77 @@
     render();
   }
 
-  document.querySelectorAll('[data-gallery]').forEach(function (el) {
-    el.addEventListener('click', function () { openGallery(el.getAttribute('data-gallery')); });
-    el.addEventListener('keydown', function (e) {
-      if (e.key === 'Enter' || e.key === ' ') { e.preventDefault(); openGallery(el.getAttribute('data-gallery')); }
-    });
-  });
+   /* ---- Render an inline thumbnail strip under every tile by default ----
+     Same `galleries` object as before is the only data source. A tile
+     whose key isn't in `galleries` yet just gets a placeholder — add its
+     entry above and the placeholder is replaced automatically, no other
+     changes needed anywhere. */
+     var MAX_VISIBLE = 3;
+
+     document.querySelectorAll('[data-gallery]').forEach(function (tile) {
+       var key = tile.getAttribute('data-gallery');
+       var mount = tile.querySelector('[data-gallery-mount]');
+       if (!mount) return;
+       var g = galleries[key];
+   
+       if (!g || !g.images.length) {
+         mount.innerHTML = '';
+         var empty = document.createElement('div');
+         empty.className = 'tile-gallery-empty';
+         empty.textContent = 'Photography coming soon';
+         mount.appendChild(empty);
+         return;
+       }
+   
+       mount.innerHTML = '';
+       var visible = g.images.slice(0, MAX_VISIBLE);
+       var remaining = g.images.length - MAX_VISIBLE;
+   
+       visible.forEach(function (item, i) {
+         var isLastVisible = i === visible.length - 1;
+         var wrap = document.createElement('div');
+         wrap.className = 'tile-thumb-wrap';
+   
+         var img = document.createElement('img');
+         img.src = item.src;
+         img.alt = item.caption;
+         img.className = 'tile-thumb';
+         img.tabIndex = 0;
+         img.setAttribute('role', 'button');
+         img.setAttribute('aria-label', 'View ' + item.caption + ' — image ' + (i + 1) + ' of ' + g.images.length);
+         img.addEventListener('click', function () { openGallery(key, i); });
+         img.addEventListener('keydown', function (e) {
+           if (e.key === 'Enter' || e.key === ' ') { e.preventDefault(); openGallery(key, i); }
+         });
+         wrap.appendChild(img);
+   
+         if (isLastVisible && remaining > 0) {
+           var more = document.createElement('div');
+           more.className = 'tile-thumb-more';
+           more.textContent = '+' + remaining;
+           wrap.appendChild(more);
+         }
+   
+         mount.appendChild(wrap);
+       });
+
+           // Pad out to MAX_VISIBLE slots so every card's row is the same total
+    // width — a dashed placeholder instead of leaving raw empty space.
+    for (var p = visible.length; p < MAX_VISIBLE; p++) {
+      var placeholder = document.createElement('div');
+      placeholder.className = 'tile-thumb-placeholder';
+      placeholder.setAttribute('aria-hidden', 'true');
+      placeholder.innerHTML =
+      '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">' +
+      '<rect x="3" y="7" width="18" height="13" rx="1.5"/>' +
+      '<path d="M8 7l1.4-2.4h5.2L16 7"/>' +
+      '<circle cx="12" cy="13.5" r="3.2"/>' +
+      '</svg>';
+      mount.appendChild(placeholder);
+    }
+    return;
+  
+     });
 
   closeBtn.addEventListener('click', closeGallery);
   prevBtn.addEventListener('click', function () { step(-1); });
