@@ -501,9 +501,10 @@ footer{position:relative; z-index:1; border-top:1px solid var(--line-bright); pa
 .gallery-close:hover{ border-color:var(--safety); color:var(--safety); }
 
 .gallery-arrow{
-  position:absolute; top:50%; transform:translateY(-50%);
-  width:48px; height:48px; background:none; border:1px solid var(--line-bright);
+  position:absolute; top:45%; transform:translateY(-50%);
+  width:48px; height:48px; background-color:black; border:1px solid var(--line-bright);
   color:var(--ink); font-size:26px; cursor:pointer; transition:all .2s var(--ease);
+  z-index: 100;
 }
 .gallery-arrow:hover{ border-color:var(--safety); color:var(--safety); }
 .gallery-arrow--prev{ left:16px; }
