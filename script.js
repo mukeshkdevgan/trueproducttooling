@@ -111,55 +111,81 @@
       title: 'Bicycles & Parts',
       images: [
         { src: 'assets/industries/bicycles/a.jpeg', caption: 'Bicycle - Outline 3D Drawings' },
-        { src: 'assets/industries/bicycles/b.jpeg', caption: 'Kid Bicycle Chain Cover' },
+        { src: 'assets/industries/bicycles/b.jpeg', caption: 'Suspension Bicycle Frame' },
+        { src: 'assets/industries/bicycles/c.jpeg', caption: 'Kids Bicycle Frame - 3D Drawing' },
+        { src: 'assets/industries/bicycles/d.jpeg', caption: 'Kids Bicycle Plastic Basket Mould - 3D Drawing' },
+        { src: 'assets/industries/bicycles/e.jpeg', caption: 'Kid Bicycle Chain Cover' },
       ]
     },
     kids: {
       title: 'Kids Tricycles & Toys',
       images: [
-        { src: 'assets/industries/kids/a.jpeg', caption: 'Kids Toy - Outline 3D Drawings' },
-        { src: 'assets/industries/kids/b.jpeg', caption: 'Kids Toy - Assembly Fixture' },
-        { src: 'assets/industries/kids/c.jpeg', caption: 'Kids Toy - Blowing Processss' },
-        { src: 'assets/industries/kids/d.jpeg', caption: 'Kids Toy - Moulds' },
+        { src: 'assets/industries/kids/a.jpeg', caption: 'Blow Moulded Fancy Tricycle' },
+        { src: 'assets/industries/kids/b.jpeg', caption: 'Kids Toy' },
+        { src: 'assets/industries/kids/c.jpeg', caption: 'Kids Toy - Outline 3D Drawings' },
+        { src: 'assets/industries/kids/d.jpeg', caption: 'Kids Toy - Blowing Processss' },
+        { src: 'assets/industries/kids/e.jpeg', caption: 'Kids Toy - Moulds' },
+        { src: 'assets/industries/kids/f.jpeg', caption: 'Kids Toy - Moulds' },
       ]
     },
     home_appliances: {
       title: 'Home Appliances Parts',
       images: [
-        { src: 'assets/industries/home_appliances/a.jpeg', caption: 'Home Appliance - Mixer Grinder' },
-        { src: 'assets/industries/home_appliances/b.jpeg', caption: 'Home Appliance - Table Fan' },
+        { src: 'assets/industries/home_appliances/a.jpeg', caption: 'Home Appliance - 4 Burner Gas Stove Stainless Steel' },
+        { src: 'assets/industries/home_appliances/b.jpeg', caption: 'Home Appliance - bbq' },
+        { src: 'assets/industries/home_appliances/c.jpeg', caption: 'Home Appliance - Onion Chopper' },
+        { src: 'assets/industries/home_appliances/d.jpeg', caption: 'Home Appliance - Potato Masher 3D Drawing' },
+        { src: 'assets/industries/home_appliances/e.jpeg', caption: 'Home Appliance - Mixer Grinder' },
+        { src: 'assets/industries/home_appliances/f.jpeg', caption: 'Home Appliance - Table Fan' },
+      ]
+    },
+    daily_need: {
+      title: 'Daily Need Products',
+      images: [
+        { src: 'assets/industries/daily_need/a.jpeg', caption: 'Daily Need Product - Brush drawing' },
+        { src: 'assets/industries/daily_need/b.jpeg', caption: 'Daily Need Product - Soap Case' },
+        { src: 'assets/industries/daily_need/c.jpeg', caption: 'Daily Need Product - Comb drawing' },
       ]
     },
     agriculture: {
       title: 'Farming Tools & Agriculture Equipments',
       images: [
-        { src: 'assets/industries/agriculture/a.jpeg', caption: 'Outline 3D Drawings' },
-        { src: 'assets/industries/agriculture/b.jpeg', caption: 'Rotary Tiller - Agricultural Equipment' },
+        { src: 'assets/industries/agriculture/a.jpeg', caption: 'Small Agricultural Equipment - 3D CAD Models' },
+        { src: 'assets/industries/agriculture/b.jpeg', caption: 'Outline 3D Drawings' },
+        { src: 'assets/industries/agriculture/c.jpeg', caption: 'Rotary Tiller - Agricultural Equipment' },
       ]
     },
     hand_tools: {
       title: 'Hand Tools',
       images: [
-        { src: 'assets/industries/hand_tools/a.jpeg', caption: 'Hand Tools - Outline 3D Drawings' },
-        { src: 'assets/industries/hand_tools/b.jpeg', caption: 'Sheet Metal Jack (Car Jack)' },
+        { src: 'assets/industries/hand_tools/a.jpeg', caption: 'Hand Tools' },
+        { src: 'assets/industries/hand_tools/b.jpeg', caption: 'Hand Tools - Outline 3D Drawings' },
+        { src: 'assets/industries/hand_tools/c.jpeg', caption: 'Sheet Metal Jack (Car Jack)' },
       ]
     },
     industrial_spm: {
       title: 'Industrial SPM(Special Purpose Machines)',
       images: [
         { src: 'assets/industries/industrial_spm/a.jpeg', caption: 'Industrial SPM' },
-        { src: 'assets/industries/industrial_spm/b.jpeg', caption: 'Industrial SPM - For Sheet Metal Component Manufacturing' },
+        { src: 'assets/industries/industrial_spm/b.jpeg', caption: 'Industrial SPM - Wire Forming Machine' },
+        { src: 'assets/industries/industrial_spm/c.jpeg', caption: 'Industrial SPM - For Sheet Metal Component Manufacturing' },
       ]
     },
     manufacturing_automation: {
       title: 'Manufacturing Automation',
       images: [
-        { src: 'assets/industries/manufacturing_automation/a.jpeg', caption: '3D Model & Station Overview' },
-        { src: 'assets/industries/manufacturing_automation/b.jpeg', caption: 'Draw & Pierce Compound Tool' },
+        { src: 'assets/industries/manufacturing_automation/a.jpeg', caption: 'Automated Welding System - Components' },
+        { src: 'assets/industries/manufacturing_automation/b.jpeg', caption: 'Automated Sheet Metal Manufacturing System' },
         { src: 'assets/industries/manufacturing_automation/c.jpeg', caption: 'Automated Welding System' },
-        { src: 'assets/industries/manufacturing_automation/d.jpeg', caption: 'Automated Welding System - Components' },
-        { src: 'assets/industries/manufacturing_automation/e.jpeg', caption: 'Automated Sheet Metal Manufacturing System' },
-        { src: 'assets/industries/manufacturing_automation/f.jpeg', caption: 'Automated Sheet Metal Power Press - Components' },
+        { src: 'assets/industries/manufacturing_automation/d.jpeg', caption: 'Automated Sheet Metal Power Press - Components' },
+      ]
+    },
+    steel_sheet: {
+      title: 'Steel Sheet Components',
+      images: [
+        { src: 'assets/industries/steel_sheet/a.jpeg', caption: 'Steel Sheet Metal Component' },
+        { src: 'assets/industries/steel_sheet/b.jpeg', caption: 'Sheet Metal Progressive Tool' },
+        { src: 'assets/industries/steel_sheet/c.jpeg', caption: 'Draw & Pierce Compound Tool' },
       ]
     }
   };
