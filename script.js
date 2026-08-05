@@ -103,8 +103,8 @@
         { src: 'assets/industries/automotive/a.jpeg', caption: 'Motorcycle Frame Welding Fixture' },
         { src: 'assets/industries/automotive/b.jpeg', caption: 'Sheet Metal Auto Part — Draw Tool' },
         { src: 'assets/industries/automotive/c.jpeg', caption: 'Welding Fixture — Sheet Metal Auto Part' },
-        { src: 'assets/industries/automotive/d.jpeg', caption: 'Assembly/Sub-Assembly' },
-        { src: 'assets/industries/automotive/e.jpeg', caption: 'Outline 3D Drawings' }
+        { src: 'assets/industries/automotive/d.jpeg', caption: 'Steel Sheet Auto Part' },
+        { src: 'assets/industries/automotive/e.jpeg', caption: 'Auto Parts' }
       ]
     },
     bicycles: {
@@ -120,23 +120,22 @@
     kids: {
       title: 'Kids Tricycles & Toys',
       images: [
-        { src: 'assets/industries/kids/a.jpeg', caption: 'Blow Moulded Fancy Tricycle' },
-        { src: 'assets/industries/kids/b.jpeg', caption: 'Kids Toy' },
-        { src: 'assets/industries/kids/c.jpeg', caption: 'Kids Toy - Outline 3D Drawings' },
-        { src: 'assets/industries/kids/d.jpeg', caption: 'Kids Toy - Blowing Processss' },
-        { src: 'assets/industries/kids/e.jpeg', caption: 'Kids Toy - Moulds' },
+        { src: 'assets/industries/kids/a.jpeg', caption: 'Fancy Tricycle' },
+        { src: 'assets/industries/kids/b.jpeg', caption: `Kid's Tractor with Trolley` },
         { src: 'assets/industries/kids/f.jpeg', caption: 'Kids Toy - Moulds' },
+        { src: 'assets/industries/kids/d.jpeg', caption: 'Kids Toy - Blowing Processss' },
+        { src: 'assets/industries/kids/e.jpeg', caption: 'Kids Toy - Moulds' }
       ]
     },
     home_appliances: {
-      title: 'Home Appliances Parts',
+      title: 'Home Appliances',
       images: [
         { src: 'assets/industries/home_appliances/a.jpeg', caption: 'Home Appliance - 4 Burner Gas Stove Stainless Steel' },
-        { src: 'assets/industries/home_appliances/b.jpeg', caption: 'Home Appliance - bbq' },
-        { src: 'assets/industries/home_appliances/c.jpeg', caption: 'Home Appliance - Onion Chopper' },
-        { src: 'assets/industries/home_appliances/d.jpeg', caption: 'Home Appliance - Potato Masher 3D Drawing' },
-        { src: 'assets/industries/home_appliances/e.jpeg', caption: 'Home Appliance - Mixer Grinder' },
-        { src: 'assets/industries/home_appliances/f.jpeg', caption: 'Home Appliance - Table Fan' },
+        { src: 'assets/industries/home_appliances/b.jpeg', caption: 'Barbecue' },
+        { src: 'assets/industries/home_appliances/c.jpeg', caption: 'Onion Chopper' },
+        { src: 'assets/industries/home_appliances/d.jpeg', caption: 'Potato Masher' },
+        { src: 'assets/industries/home_appliances/e.jpeg', caption: 'Electric Roti Maker' },
+        { src: 'assets/industries/home_appliances/f.jpeg', caption: 'Mixer Grinder' },
       ]
     },
     daily_need: {
